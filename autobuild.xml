@@ -3,6 +3,8 @@
 <map>
     <key>package_description</key>
     <map>
+      <key>canonical_repo</key>
+      <string>https://bitbucket.org/nickyd/3p-jemalloc</string>
       <key>copyright</key>
       <string>Copyright (C) 2002-present Jason Evans jasone@canonware.com.</string>
       <key>description</key>

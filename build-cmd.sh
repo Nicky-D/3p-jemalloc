@@ -22,7 +22,7 @@ case "$AUTOBUILD_PLATFORM" in
 
 			cd ${top}/${SOURCE_DIR}
 			./autogen.sh
-			make -j4
+			make -j `nproc`
 
 			mkdir -p ${stage}/lib/release/
 			mkdir -p ${stage}/LICENSES/

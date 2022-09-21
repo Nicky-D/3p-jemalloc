@@ -28,7 +28,7 @@ case "$AUTOBUILD_PLATFORM" in
 			mkdir -p ${stage}/LICENSES/
 			
 			cp lib/* ${stage}/lib/release/
-			echo "5.2.1" > ${stage}/VERSION.txt
+			cat include/jemalloc/jemalloc.h | sed -n 's/#define JEMALLOC_VERSION //p'  | tr -d '"' > ${stage}/VERSION.txt
 			cp COPYING ${stage}/LICENSES/jemalloc.txt
 			;;
 		*)
